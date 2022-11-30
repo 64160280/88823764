@@ -1,0 +1,125 @@
+<!-- Author : Phachara Aunkitt 64160280
+Date modified : 30 Nov 2022 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"Workshop HTML-Form"</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Athiti:wght@200&display=swap" rel="stylesheet">
+    <style>
+        * {
+            /* background-color: #F2DEBA; */
+            font-family: 'Athiti', sans-serif;
+            font-weight: bold;
+        }
+
+        .tab {
+            display: inline-block;
+            margin-left: 100px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Workshop#HTML-Form</h1>
+    <form>
+        <table>
+            <!-- ชื่อจริง -->
+            <tr>
+                <td><label for="fname">ชื่อ</label></td>
+                <td><input type="text" name="firstName" placeholder="กรุณาป้อนชื่อจริง"></td>
+            </tr>
+
+            <tr>
+                <!-- นามสกุล -->
+                <td><label for="lname">สกุล</label></td>
+                <td><input type="text" name="lastName" placeholder="กรุณาป้อนนามสกุล"></td>
+            </tr>
+
+            <tr>
+                <!-- วันเดือนปีเกิด -->
+                <td><label for="dateOfBirth">วันเดือนปีเกิด</label></td>
+                <td><input type="date" name="dateOfBirth"></td>
+            </tr>
+
+            <tr>
+                <!-- อายุ -->
+                <td><label for="age">อายุ</label></td>
+                <td><input type="number" name="age" min="0" placeholder="อายุ"></td>
+            </tr>
+
+            <tr>
+                <!-- เพศ -->
+                <td><label for="sex">เพศ</label></td>
+                <td><input type="radio" name="sex">เพศชาย
+                    <input type="radio" name="sex">เพศหญิง
+                </td>
+
+            </tr>
+
+            <tr>
+                <!-- รูป -->
+                <td><label for="picture">รูป</label></td>
+                <td><input type="file" name="picture"></td>
+            </tr>
+
+            <tr>
+                <!-- ที่อยู่ -->
+                <td><label for="address">ที่อยู่</label></td>
+                <td><textarea name="address" id="address" cols="30" rows="5"></textarea></td>
+            </tr>
+
+
+            <tr>
+                <!-- สีที่ชอบ -->
+                <td><label for="favColor">สีที่ชอบ</label></td>
+                <td><select name="favColor" id="favColor">
+                        <option value="สีแดง" selected>สีแดง</option>
+                        <option value="สีน้ำเงิน">สีน้ำเงิน</option>
+                        <option value="สีน้ำเงิน">สีเขียว</option>
+                        <option value="สีน้ำเงิน">สีเหลือง</option>
+                        <option value="สีน้ำเงิน">สีดำ</option>
+                        <option value="สีน้ำเงิน">สีน้ำตาล</option>
+                        <option value="สีน้ำเงิน">สีขาว</option>
+                    </select></td>
+            </tr>
+
+
+            <tr>
+                <!-- แนวเพลงที่ชอบ -->
+                <td><label for="musicSyle">แนวเพลงที่ชอบ</label></td>
+                <td><input type="radio" name="color">ลูกทุ่ง
+                    <input type="radio" name="color">เพื่อชีวิต
+                    <input type="radio" name="color">อื่นๆ
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4">&nbsp;</td>
+            </tr>
+        </table>
+
+
+        <!-- ยินยอมให้เก็บข้อมูล -->
+        <input type="checkbox" name="acceptToKeep">
+        <label for="acceptToKeep">ยินยอมให้เก็บข้อมูล</label>
+
+        <br>
+        <br>
+        <br>
+
+        <!-- ข้อมูล -->
+        <div>
+            <button type="reset" name="resetInformation">Reset</button>
+            <button class="tab" type="submit" name="saveInformation">Submit</button>
+        </div>
+    </form>
+</body>
+
+</html>
